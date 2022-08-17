@@ -212,7 +212,12 @@ p {
     border-radius: .5rem;
 }
 .berco{
-    width: 60vw;
+    margin-left: 35rem;
+    padding-top: 8rem;
+    padding-bottom: 9rem;
+}
+.berco img{
+    max-width: 35vw;
 }
 
 .aboutus {
