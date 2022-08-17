@@ -293,3 +293,32 @@ p {
 .ourfurnitures .col:hover .image{
     opacity: .5;
 }
+.whoweare{
+    background-image: url("../img/fundowhoweare.png");
+    background-repeat: repeat-y;
+    text-align: center;
+    color: var(--b);
+}
+.whoweare p{
+    color: var(--b);
+    font-family: bahnschrift;
+}
+.whoweare h1, .whoweare h3{
+    font-family: poppins;
+}
+.whoweare button{
+    font-family: bahnschrift;
+    font-weight: bold;
+    background-color: var(--b);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: 2rem;
+}
+.whoweare h1{
+    padding-top: 3rem;
+}
+.whoweare h3, .whoweare p{
+    padding-top: 1rem;
+}
