@@ -1,0 +1,246 @@
+:root {
+    --c: rgb(150, 150, 150);
+    --ce: rgb(82, 82, 82);
+    --cmz: rgb(29, 29, 29);
+    --p: rgb(0, 0, 0);
+    --y: rgb(255, 182, 7);
+    --b: rgb(255, 255, 255);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 270px;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--b);
+    transition: color .4s;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--b);
+    transition: color .4s;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--p);
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    background: var(--b);
+    transition: color .4s;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+    transition: color .4s;
+}
+
+.nav-link.active,
+.nav-link:focus {
+    color: var(--b);
+    transition: color .4s;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--y);
+    transition: color .4s;
+}
+
+.letrash2 {
+    padding-bottom: 1.5rem;
+    padding-top: 5rem;
+}
+
+.letrash3 p {
+    color: var(--ce);
+}
+
+.letrash2,
+.letrash3 {
+    font-family: bahnschrift;
+    text-align: center;
+}
+
+.letrash3 h3 {
+    padding-top: 2rem;
+}
+
+.letrash3 button,
+.colorbutton {
+    color: var(--b);
+}
+
+.carousel-item h1 {
+    font-size: 5rem;
+}
+
+.menulinks li {
+    padding-right: 1.5rem;
+    color: var(--p);
+}
+
+.carrossel h1,
+p {
+    color: var(--p);
+}
+
+#logotxt {
+    color: var(--p);
+    padding-left: 1rem;
+}
+
+.btn {
+    background-color: var(--y);
+}
+
+.colorbutton {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.carrossel h1 {
+    margin-bottom: 2rem;
+}
+
+.carrossel p {
+    margin-bottom: 10rem;
+}
+
+.teste1 button {
+    margin-bottom: -22rem;
+}
+
+.activee a {
+    text-decoration: underline 0.4rem var(--y);
+    transition: color .4s;
+}
+
+.activee a:hover {
+    text-decoration: underline 0.4rem var(--y);
+    color: var(--y);
+    transition: color .4s;
+}
+
+.colorbutton:hover,
+.letrash3 button:hover {
+    transition: color .4s;
+    color: var(--b);
+}
+
+.navbar {
+    margin-bottom: -5rem;
+    z-index: 10;
+}
+
+.carrossel {
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 2;
+}
+
+.letrash3 {
+    padding-bottom: 8rem;
+}
+
+.amarelo {
+    color: var(--b);
+    background-color: var(--y);
+}
+
+.amarelo button,
+.amarelo button:hover,
+.amarelo p {
+    color: var(--b);
+}
+
+.amarelo button {
+    background-color: var(--p);
+    font-family: Poppins;
+    border-radius: .5rem;
+}
+.berco{
+    width: 60vw;
+}
+.berco svg{
+    padding-left: 20vw;
+}
+
+.aboutus {
+    padding-top: 8rem;
+    width: 30vw;
+    float: left;
+}
+
+.aboutus h1,
+.aboutus p {
+    padding-bottom: 2.5rem;
+}
+
+.aboutus p {
+    line-height: 2;
+    font-family: bahnschrift;
+}
+
+.aboutus h1 {
+    font-family: Poppins;
+}
+
+.amarelo button {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
