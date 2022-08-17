@@ -246,3 +246,50 @@ p {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+.ourfurnitures{
+    text-align: center;
+}
+.ourfurnitures h1{
+    font-family: poppins;
+    padding-top: 10rem;
+}
+.ourfurnitures p{
+    font-family: bahnschrift;
+    padding-bottom: 5rem;
+}
+.ourfurnitures img{
+    max-width: 35vw;
+}
+.ourfurnitures h3{
+    font-family: 'Open Sans';
+    color: var(--y);
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 1vw;
+    padding-top: 8rem;
+    padding-bottom: 1vw;
+    font-weight: bold;
+}
+.ourfurnitures .row p{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: left;
+}
+.overlay {
+    width: 5rem;
+    height: 5rem;
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);  
+    background-image: url("../img/lupabranca.png");
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    margin-left: 17rem;
+    margin-top: -10rem;
+}
+.ourfurnitures .col:hover .overlay{
+    opacity: .8;
+}
+.ourfurnitures .col:hover .image{
+    opacity: .5;
+}
