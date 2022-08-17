@@ -211,12 +211,14 @@ p {
     font-family: Poppins;
     border-radius: .5rem;
 }
-.berco{
+
+.berco {
     margin-left: 35rem;
     padding-top: 8rem;
     padding-bottom: 9rem;
 }
-.berco img{
+
+.berco img {
     max-width: 35vw;
 }
 
@@ -246,21 +248,26 @@ p {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.ourfurnitures{
+
+.ourfurnitures {
     text-align: center;
 }
-.ourfurnitures h1{
+
+.ourfurnitures h1 {
     font-family: poppins;
     padding-top: 10rem;
 }
-.ourfurnitures p{
+
+.ourfurnitures p {
     font-family: bahnschrift;
     padding-bottom: 5rem;
 }
-.ourfurnitures img{
+
+.ourfurnitures img {
     max-width: 35vw;
 }
-.ourfurnitures h3{
+
+.ourfurnitures h3 {
     font-family: 'Open Sans';
     color: var(--y);
     font-size: 1.2rem;
@@ -270,43 +277,53 @@ p {
     padding-bottom: 1vw;
     font-weight: bold;
 }
-.ourfurnitures .row p{
+
+.ourfurnitures .row p {
     padding-left: 1vw;
     padding-right: 1vw;
     text-align: left;
 }
+
 .overlay {
     width: 5rem;
     height: 5rem;
     transition: .5s ease;
     opacity: 0;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);
     background-image: url("../img/lupabranca.png");
     background-repeat: no-repeat;
     background-size: 5rem;
     margin-left: 17rem;
     margin-top: -10rem;
 }
-.ourfurnitures .col:hover .overlay{
+
+.ourfurnitures .col:hover .overlay {
     opacity: .8;
 }
-.ourfurnitures .col:hover .image{
+
+.ourfurnitures .col:hover .image {
     opacity: .5;
 }
-.whoweare{
+
+.whoweare {
     background-image: url("../img/fundowhoweare.png");
     background-repeat: repeat-y;
     text-align: center;
     color: var(--b);
+    padding-bottom: 6.5vh;
 }
-.whoweare p{
+
+.whoweare p {
     color: var(--b);
     font-family: bahnschrift;
 }
-.whoweare h1, .whoweare h3{
+
+.whoweare h1,
+.whoweare h3 {
     font-family: poppins;
 }
-.whoweare button{
+
+.whoweare button {
     font-family: bahnschrift;
     font-weight: bold;
     background-color: var(--b);
@@ -316,9 +333,63 @@ p {
     padding-bottom: .5rem;
     margin-top: 2rem;
 }
-.whoweare h1{
+
+.whoweare h1 {
     padding-top: 3rem;
 }
-.whoweare h3, .whoweare p{
+
+.whoweare h3,
+.whoweare p {
     padding-top: 1rem;
+}
+.ourprojects{
+    font-family: bahnschrift;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+.ourprojects img{
+    max-width: 23vw;
+    margin-top: 5vh;
+}
+.ourprojects label{
+    position: relative;
+    bottom: 15vh;
+    font-weight: bold;
+    font-size: 1.3vw;
+    color: var(--b);
+}
+.ourprojects label button{
+    position: relative;
+    bottom: 12vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    left: 6.5vw;
+    background-color: transparent;
+    color: var(--b);
+}
+.overlay2{
+    width: 20vw;
+    height: 38vh;
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background-color: var(--y);
+    background-size: 5rem;
+    margin-left: 12.3vw;
+    margin-top: -20.8vh;
+    border-radius: .5rem;
+}
+.ourprojects .col:hover .image{
+    opacity: 1;
+    background-color: transparent;
+    color: var(--b);
+}
+.ourprojects .col:hover .overlay2{
+    opacity: 0.8;
 }
