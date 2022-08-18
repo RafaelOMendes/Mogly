@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
 }
 
 .carousel-item {
@@ -54,12 +54,10 @@ body {
 .navbar-light .navbar-nav .show>.nav-link {
     color: var(--b);
     transition: color .4s;
-    font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: var(--p);
-    font-weight: bold;
 }
 
 .navbar-toggler {
@@ -404,6 +402,7 @@ p {
 .ourclients {
     text-align: center;
     font-family: poppins;
+    min-height: 50vw;
 }
 
 .ourclients p {
@@ -413,8 +412,7 @@ p {
 .ourclients img {
     float: left;
 }
-
-.ourclients .ourclientscolleft {
+.ourclientscolleft {
     border: solid 0.1vw var(--p);
     border-radius: .1vw;
     max-width: 42vw;
@@ -424,7 +422,7 @@ p {
     padding-bottom: 1vw;
 }
 
-.ourclients .ourclientscolright {
+.ourclientscolright {
     border: solid 0.1vw var(--p);
     border-radius: .1vw;
     max-width: 42vw;
@@ -476,4 +474,70 @@ p {
     border-radius: 10vw;
     padding: 1.5vw;
     margin: 1vw;
+}
+.rodape{
+    background-image: url("../img/rodapebg.png");
+    background-repeat: repeat-y;
+    opacity: .8;
+}
+.contactus{
+    background-color: rgba(255, 182, 7, 0.8);
+    height: 50vw;
+    opacity: 1;
+}
+
+.contactus h1{
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    color: var(--b);
+}
+.contactus input, .contactus textarea{
+    margin-top: 1vw;
+}
+.contactsend{
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-top: .8vw;
+    padding-bottom: .8vw;
+    margin-top: 2vw;
+    color: var(--b);
+    background-color: transparent;
+    border: solid .3vw var(--b);
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.contactsend:hover {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-top: .8vw;
+    padding-bottom: .8vw;
+    color: var(--ce);
+    background-color: var(--b);
+    border: solid .3vw var(--b);
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.contactimage{
+    position: relative;
+    bottom: 4vw;
+    left: 2vw;
+}
+.together{
+    opacity: 1;
+    color: var(--b);
+    background-color: rgba(29, 29, 29, 0.8);
+    padding-top: 5vw;
+}
+.together h1{
+    font-weight: bold;
+}
+.together p{
+    color: var(--b);
+}
+.together a{
+    text-decoration: none;
+    color: var(--b);
+}
+.together button{
+    
 }
