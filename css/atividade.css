@@ -346,7 +346,6 @@ p {
     font-family: bahnschrift;
     text-align: center;
     padding-top: 15vh;
-    padding-bottom: 15vh;
 }
 .ourprojects img{
     max-width: 23vw;
@@ -354,24 +353,24 @@ p {
 }
 .ourprojects label{
     position: relative;
-    bottom: 15vh;
+    bottom: 25vw;
     font-weight: bold;
     font-size: 1.3vw;
     color: var(--b);
 }
 .ourprojects label button{
-    position: relative;
-    bottom: 12vh;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     opacity: 1;
-    transform: translate(-50%, -50%);
     transition: .5s ease;
     left: 6.5vw;
     background-color: transparent;
     color: var(--b);
+}
+.ourprojects .botao{
+    top: 8vw;
 }
 .overlay2{
     width: 20vw;
@@ -380,9 +379,9 @@ p {
     opacity: 0;
     transform: translate(-50%, -50%);
     background-color: var(--y);
-    background-size: 5rem;
-    margin-left: 12.3vw;
-    margin-top: -20.8vh;
+    position: relative;
+    left: 12vw;
+    bottom: 20.8vh;
     border-radius: .5rem;
 }
 .ourprojects .col:hover .image{
