@@ -342,23 +342,27 @@ p {
 .whoweare p {
     padding-top: 1rem;
 }
-.ourprojects{
+
+.ourprojects {
     font-family: bahnschrift;
     text-align: center;
     padding-top: 15vh;
 }
-.ourprojects img{
+
+.ourprojects img {
     max-width: 23vw;
     margin-top: 5vh;
 }
-.ourprojects label{
+
+.ourprojects label {
     position: relative;
     bottom: 25vw;
     font-weight: bold;
     font-size: 1.3vw;
     color: var(--b);
 }
-.ourprojects label button{
+
+.ourprojects label button {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 1rem;
@@ -369,10 +373,12 @@ p {
     background-color: transparent;
     color: var(--b);
 }
-.ourprojects .botao{
+
+.ourprojects .botao {
     top: 8vw;
 }
-.overlay2{
+
+.overlay2 {
     width: 20vw;
     height: 38vh;
     transition: .5s ease;
@@ -384,11 +390,90 @@ p {
     bottom: 20.8vh;
     border-radius: .5rem;
 }
-.ourprojects .col:hover .image{
+
+.ourprojects .col:hover .image {
     opacity: 1;
     background-color: transparent;
     color: var(--b);
 }
-.ourprojects .col:hover .overlay2{
+
+.ourprojects .col:hover .overlay2 {
     opacity: 0.8;
+}
+
+.ourclients {
+    text-align: center;
+    font-family: poppins;
+}
+
+.ourclients p {
+    font-family: bahnschrift;
+}
+
+.ourclients img {
+    float: left;
+}
+
+.ourclients .ourclientscolleft {
+    border: solid 0.1vw var(--p);
+    border-radius: .1vw;
+    max-width: 42vw;
+    float: left;
+    margin-top: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.ourclients .ourclientscolright {
+    border: solid 0.1vw var(--p);
+    border-radius: .1vw;
+    max-width: 42vw;
+    float: right;
+    margin-top: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.ourclients .row {
+    display: inline;
+    text-align: left;
+}
+
+.ourclients .row p {
+    color: var(--ce);
+    font-size: 1vw;
+}
+
+.ourclients .row h4 {
+    font-size: 1.5vw;
+}
+
+.ourclients .col img {
+    padding-right: 1vw;
+}
+.paginaclient{
+    float: left;
+    margin-top: 8vw;
+}
+.paginaclientamarelo a{
+    background-color: var(--y);
+    border: solid 0;
+    border-radius: 10vw;
+    padding: 1.5vw;
+    margin: 1vw;
+}
+.paginaclientamarelo li{
+    background-color: var(--y);
+    border: solid 0;
+    border-radius: 10vw;
+}
+.paginaclientamareloinv{
+    opacity: 0;
+}
+.paginaclientpreto a{
+    background-color: var(--p);
+    border: solid 0;
+    border-radius: 10vw;
+    padding: 1.5vw;
+    margin: 1vw;
 }
