@@ -12,28 +12,27 @@ body {
 }
 
 body h1 {
-    font-size: 3vw;
+    font-size: clamp(2rem, 1rem + 3vw, 3vw);
 }
 
 body h2 {
-    font-size: 2vw;
+    font-size: clamp(1.3rem, .7rem + 2vw, 2vw);
 }
 
 body h3 {
-    font-size: 1.8vw;
+    font-size: clamp(1rem, .5rem + 1.8vw, 1.8vw);
 }
 
 body p {
-    font-size: 1.1vw;
+    font-size: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
 }
 
 body a {
-    font-size: 1.1vw;
+    font-size: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
 }
 
 .carousel-item {
-    height: 55vw;
-    min-height: 10vw;
+    height: clamp(20rem, 20rem + 55vw, 55vw);
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -109,7 +108,7 @@ body a {
 }
 
 .letrash3 img {
-    max-width: 5vw;
+    width: clamp(4rem, 2rem + 6vw, 6vw);
 }
 
 .letrash3 p {
@@ -129,7 +128,7 @@ body a {
 .letrash3 button,
 .colorbutton {
     color: var(--b);
-    font-size: 1.2vw;
+    font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
 }
 
 .menulinks li {
@@ -144,8 +143,10 @@ p {
 
 #logotxt {
     color: var(--p);
-    padding-left: 1.2vw;
-    font-size: 1.5vw;
+    padding-left: 1.4vw;
+    font-size: clamp(1rem, 1rem + 2vw, 2vw);
+    position: relative;
+    top: .4vw;
 }
 
 .btn {
@@ -196,7 +197,7 @@ p {
 }
 
 .imgnavbar{
-    width: 5vw;
+    width: clamp(2.5rem, 1.5rem + 5vw, 5vw);
 }
 
 .carrossel {
@@ -215,6 +216,7 @@ p {
 .amarelo {
     color: var(--b);
     background-color: var(--y);
+    height: clamp(20rem, 5rem + 40vw, 40vw);
 }
 
 .amarelo button,
@@ -230,33 +232,35 @@ p {
 }
 
 .berco {
-    margin-left: 35vw;
-    padding-top: 8vw;
-    padding-bottom: 9vw;
+    top: 10vw;
+    left: 10vw;
+    position: relative;
 }
 
 .berco img {
-    max-width: 35vw;
+    max-width: 30vw;
+    min-width: 15rem;
 }
 
 .aboutus {
-    padding-top: 8vw;
+    padding-top: clamp(.1rem ,2rem + 8vw, 8vw);
     max-width: 30vw;
     float: left;
 }
 
 .aboutus h1,
 .aboutus p {
-    padding-bottom: 2.5vw;
+    padding-bottom: clamp(.1rem, 1rem + 2.5vw, 2.5vw);
 }
 
 .aboutus p {
-    line-height: 2;
+    line-height: clamp(.2rem, 1rem + 2, 2);
     font-family: bahnschrift;
 }
 
 .aboutus h1 {
     font-family: Poppins;
+    font-size: clamp(1.5rem, 1rem + 3vw, 3vw);
 }
 
 .amarelo button {
@@ -264,6 +268,7 @@ p {
     padding-bottom: .5vw;
     padding-left: 2vw;
     padding-right: 2vw;
+    font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
 }
 
 .ourfurnitures {
@@ -273,6 +278,7 @@ p {
 .ourfurnitures h1 {
     font-family: poppins;
     padding-top: 10vw;
+    font-size: clamp(1.5rem, 1rem + 3vw, 3vw);
 }
 
 .ourfurnitures p {
@@ -349,6 +355,7 @@ p {
     padding-top: .5vw;
     padding-bottom: .5vw;
     margin-top: 2vw;
+    font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
 }
 
 .whoweare h1 {
@@ -389,6 +396,7 @@ p {
     left: 6.5vw;
     background-color: transparent;
     color: var(--b);
+    font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
 }
 
 .ourprojects .botao {
@@ -553,6 +561,7 @@ p {
     position: relative;
     bottom: 4vw;
     left: 2vw;
+    
 }
 
 .together {
