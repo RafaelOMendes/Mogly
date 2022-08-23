@@ -11,9 +11,29 @@ body {
     font-family: poppins;
 }
 
+body h1 {
+    font-size: 3vw;
+}
+
+body h2 {
+    font-size: 2vw;
+}
+
+body h3 {
+    font-size: 1.8vw;
+}
+
+body p {
+    font-size: 1.1vw;
+}
+
+body a {
+    font-size: 1.1vw;
+}
+
 .carousel-item {
     height: 55vw;
-    min-height: 300px;
+    min-height: 10vw;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -22,27 +42,18 @@ body {
 }
 
 .carousel-caption {
-    bottom: 270px;
-}
-
-.carousel-caption h5 {
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
+    bottom: 20vw;
 }
 
 .carousel-caption p {
     width: 75%;
     margin: auto;
-    font-size: 18px;
     line-height: 1.9;
 }
 
 .navbar-light .navbar-brand {
     color: var(--b);
     transition: color .4s;
-    font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
@@ -61,7 +72,6 @@ body {
 }
 
 .navbar-toggler {
-    background: var(--b);
     transition: color .4s;
 }
 
@@ -70,7 +80,7 @@ body {
 }
 
 .nav-link {
-    padding: .2rem 1rem;
+    padding: .2vw 1vw;
     transition: color .4s;
 }
 
@@ -84,6 +94,7 @@ body {
     padding: 1px 5px;
     font-size: 18px;
     line-height: 0.3;
+    z-index: 5;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -93,8 +104,12 @@ body {
 }
 
 .letrash2 {
-    padding-bottom: 1.5rem;
-    padding-top: 5rem;
+    padding-bottom: 1.5vw;
+    padding-top: 5vw;
+}
+
+.letrash3 img {
+    max-width: 5vw;
 }
 
 .letrash3 p {
@@ -108,20 +123,17 @@ body {
 }
 
 .letrash3 h3 {
-    padding-top: 2rem;
+    padding-top: 2vw;
 }
 
 .letrash3 button,
 .colorbutton {
     color: var(--b);
-}
-
-.carousel-item h1 {
-    font-size: 5rem;
+    font-size: 1.2vw;
 }
 
 .menulinks li {
-    padding-right: 1.5rem;
+    padding-right: 1.5vw;
     color: var(--p);
 }
 
@@ -132,7 +144,8 @@ p {
 
 #logotxt {
     color: var(--p);
-    padding-left: 1rem;
+    padding-left: 1.2vw;
+    font-size: 1.5vw;
 }
 
 .btn {
@@ -140,31 +153,31 @@ p {
 }
 
 .colorbutton {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .carrossel h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 2vw;
 }
 
 .carrossel p {
-    margin-bottom: 10rem;
+    margin-bottom: 10vw;
 }
 
 .teste1 button {
-    margin-bottom: -22rem;
+    margin-bottom: -22vw;
 }
 
 .activee a {
-    text-decoration: underline 0.4rem var(--y);
+    text-decoration: underline 0.4vw var(--y);
     transition: color .4s;
 }
 
 .activee a:hover {
-    text-decoration: underline 0.4rem var(--y);
+    text-decoration: underline 0.4vw var(--y);
     color: var(--y);
     transition: color .4s;
 }
@@ -176,8 +189,14 @@ p {
 }
 
 .navbar {
-    margin-bottom: -5rem;
     z-index: 10;
+    background-image: url('../img/fundo2.png');
+    background-size: 100vw;
+    background-repeat: repeat-y;
+}
+
+.imgnavbar{
+    width: 5vw;
 }
 
 .carrossel {
@@ -190,7 +209,7 @@ p {
 }
 
 .letrash3 {
-    padding-bottom: 8rem;
+    padding-bottom: 8vw;
 }
 
 .amarelo {
@@ -207,13 +226,13 @@ p {
 .amarelo button {
     background-color: var(--p);
     font-family: Poppins;
-    border-radius: .5rem;
+    border-radius: .5vw;
 }
 
 .berco {
-    margin-left: 35rem;
-    padding-top: 8rem;
-    padding-bottom: 9rem;
+    margin-left: 35vw;
+    padding-top: 8vw;
+    padding-bottom: 9vw;
 }
 
 .berco img {
@@ -221,14 +240,14 @@ p {
 }
 
 .aboutus {
-    padding-top: 8rem;
-    width: 30vw;
+    padding-top: 8vw;
+    max-width: 30vw;
     float: left;
 }
 
 .aboutus h1,
 .aboutus p {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.5vw;
 }
 
 .aboutus p {
@@ -241,10 +260,10 @@ p {
 }
 
 .amarelo button {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .ourfurnitures {
@@ -253,12 +272,12 @@ p {
 
 .ourfurnitures h1 {
     font-family: poppins;
-    padding-top: 10rem;
+    padding-top: 10vw;
 }
 
 .ourfurnitures p {
     font-family: bahnschrift;
-    padding-bottom: 5rem;
+    padding-bottom: 5vw;
 }
 
 .ourfurnitures img {
@@ -268,10 +287,10 @@ p {
 .ourfurnitures h3 {
     font-family: 'Open Sans';
     color: var(--y);
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     text-align: left;
     padding-left: 1vw;
-    padding-top: 8rem;
+    padding-top: 8vw;
     padding-bottom: 1vw;
     font-weight: bold;
 }
@@ -283,16 +302,16 @@ p {
 }
 
 .overlay {
-    width: 5rem;
-    height: 5rem;
+    width: 5vw;
+    height: 5vw;
     transition: .5s ease;
     opacity: 0;
     transform: translate(-50%, -50%);
     background-image: url("../img/lupabranca.png");
     background-repeat: no-repeat;
-    background-size: 5rem;
-    margin-left: 17rem;
-    margin-top: -10rem;
+    background-size: 5vw;
+    margin-left: 17vw;
+    margin-top: -10vw;
 }
 
 .ourfurnitures .col:hover .overlay {
@@ -308,7 +327,7 @@ p {
     background-repeat: repeat-y;
     text-align: center;
     color: var(--b);
-    padding-bottom: 6.5vh;
+    padding-bottom: 6.5vw;
 }
 
 .whoweare p {
@@ -325,31 +344,31 @@ p {
     font-family: bahnschrift;
     font-weight: bold;
     background-color: var(--b);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    margin-top: 2rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    margin-top: 2vw;
 }
 
 .whoweare h1 {
-    padding-top: 3rem;
+    padding-top: 3vw;
 }
 
 .whoweare h3,
 .whoweare p {
-    padding-top: 1rem;
+    padding-top: 1vw;
 }
 
 .ourprojects {
     font-family: bahnschrift;
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 15vw;
 }
 
 .ourprojects img {
     max-width: 23vw;
-    margin-top: 5vh;
+    margin-top: 5vw;
 }
 
 .ourprojects label {
@@ -361,10 +380,10 @@ p {
 }
 
 .ourprojects label button {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     opacity: 1;
     transition: .5s ease;
     left: 6.5vw;
@@ -377,16 +396,16 @@ p {
 }
 
 .overlay2 {
-    width: 20vw;
-    height: 38vh;
+    max-width: 20vw;
+    height: 38vw;
     transition: .5s ease;
     opacity: 0;
     transform: translate(-50%, -50%);
     background-color: var(--y);
     position: relative;
     left: 12vw;
-    bottom: 20.8vh;
-    border-radius: .5rem;
+    bottom: 20.8vw;
+    border-radius: .5vw;
 }
 
 .ourprojects .col:hover .image {
@@ -412,6 +431,7 @@ p {
 .ourclients img {
     float: left;
 }
+
 .ourclientscolleft {
     border: solid 0.1vw var(--p);
     border-radius: .1vw;
@@ -449,52 +469,62 @@ p {
 .ourclients .col img {
     padding-right: 1vw;
 }
-.paginaclient{
+
+.paginaclient {
     float: left;
     margin-top: 8vw;
 }
-.paginaclientamarelo a{
+
+.paginaclientamarelo a {
     background-color: var(--y);
     border: solid 0;
     border-radius: 10vw;
     padding: 1.5vw;
     margin: 1vw;
 }
-.paginaclientamarelo li{
+
+.paginaclientamarelo li {
     background-color: var(--y);
     border: solid 0;
     border-radius: 10vw;
 }
-.paginaclientamareloinv{
+
+.paginaclientamareloinv {
     opacity: 0;
 }
-.paginaclientpreto a{
+
+.paginaclientpreto a {
     background-color: var(--p);
     border: solid 0;
     border-radius: 10vw;
     padding: 1.5vw;
     margin: 1vw;
 }
-.rodape{
+
+.rodape {
     background-image: url("../img/rodapebg.png");
     background-repeat: repeat-y;
     opacity: .8;
 }
-.contactus{
+
+.contactus {
     background-color: rgba(255, 179, 0, 0.8);
     height: 50vw;
     opacity: 1;
 }
 
-.contactus h1{
+.contactus h1 {
     padding-top: 5vw;
     padding-bottom: 2vw;
     color: var(--b);
 }
-.contactus input, .contactus textarea{
+
+.contactus input,
+.contactus textarea {
     margin-top: 1vw;
 }
-.contactsend{
+
+.contactsend {
     padding-left: 2.5vw;
     padding-right: 2.5vw;
     padding-top: .8vw;
@@ -506,6 +536,7 @@ p {
     font-size: 1.5vw;
     font-weight: bold;
 }
+
 .contactsend:hover {
     padding-left: 2.5vw;
     padding-right: 2.5vw;
@@ -517,65 +548,77 @@ p {
     font-size: 1.5vw;
     font-weight: bold;
 }
-.contactimage{
+
+.contactimage {
     position: relative;
     bottom: 4vw;
     left: 2vw;
 }
-.together{
+
+.together {
     opacity: 1;
     color: var(--b);
     background-color: rgba(0, 0, 0, 0.8);
     padding-top: 5vw;
     padding-bottom: 5vw;
 }
-.together h1{
+
+.together h1 {
     font-weight: bold;
 }
-.together p{
+
+.together p {
     color: var(--b);
 }
-.together a{
+
+.together a {
     text-decoration: none;
     color: var(--b);
 }
 
-.together input, .together button{
+.together input,
+.together button {
     border-bottom: solid .1vw var(--b);
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
     background-color: transparent;
 }
-.together button{
+
+.together button {
     color: var(--b);
     font-weight: bold;
 }
-.together input:hover{
+
+.together input:hover {
     border-bottom: solid .1vw var(--b);
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
     background-color: transparent;
 }
-.together input:focus{
+
+.together input:focus {
     border-bottom: solid .1vw var(--b);
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
     background-color: transparent;
 }
-.together .input-group{
-    width: 40vw;
+
+.together .input-group {
+    max-width: 40vw;
     position: relative;
     left: 40vw;
 }
-.socialmedia{
+
+.socialmedia {
     background-color: var(--b);
     padding-top: 2vw;
     padding-bottom: .5vw;
 }
-.imagesmedia img{
+
+.imagesmedia img {
     padding-left: .3vw;
     padding-right: .3vw;
 }
