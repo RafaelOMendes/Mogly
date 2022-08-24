@@ -1,0 +1,634 @@
+:root {
+  --c: rgb(150, 150, 150);
+  --ce: rgb(82, 82, 82);
+  --cmz: rgb(29, 29, 29);
+  --p: rgb(0, 0, 0);
+  --y: rgb(255, 182, 7);
+  --b: rgb(255, 255, 255);
+}
+
+body {
+  font-family: poppins;
+}
+body h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 3vw);
+}
+body h2 {
+  font-size: clamp(1.3rem, 0.7rem + 2vw, 2vw);
+}
+body h2:hover {
+  color: var(--ce);
+}
+
+body h3 {
+  font-size: clamp(1rem, 0.5rem + 1.8vw, 1.8vw);
+}
+
+body p {
+  font-size: clamp(0.7rem, 0.4rem + 1.1vw, 1.1vw);
+}
+
+body a {
+  font-size: clamp(0.7rem, 0.4rem + 1.1vw, 1.1vw);
+}
+
+.carousel-item {
+  height: clamp(20rem, 20rem + 55vw, 55vw);
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel-caption {
+  bottom: 20vw;
+}
+
+.carousel-caption p {
+  width: 75%;
+  margin: auto;
+  line-height: 1.9;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--b);
+  transition: color 0.4s;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: var(--b);
+  transition: color 0.4s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--p);
+}
+
+.navbar-toggler {
+  transition: color 0.4s;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding: 0.2vw 1vw;
+  transition: color 0.4s;
+}
+
+.nav-link.active,
+.nav-link:focus {
+  color: var(--b);
+  transition: color 0.4s;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+  z-index: 5;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--y);
+  transition: color 0.4s;
+}
+
+.letrash2 {
+  padding-bottom: 1.5vw;
+  padding-top: 5vw;
+}
+
+.letrash3 img {
+  width: clamp(4rem, 2rem + 6vw, 6vw);
+}
+
+.letrash3 p {
+  color: var(--ce);
+}
+
+.letrash2,
+.letrash3 {
+  font-family: bahnschrift;
+  text-align: center;
+}
+
+.letrash3 h3 {
+  padding-top: 2vw;
+}
+
+.colorbutton {
+  color: var(--b);
+  font-size: clamp(0.7rem, 1rem + 1.2vw, 1.2vw);
+}
+
+.menulinks li {
+  padding-right: 1.5vw;
+  color: var(--p);
+}
+
+.carrossel h1,
+p {
+  color: var(--p);
+}
+
+#logotxt {
+  color: var(--p);
+  padding-left: 1.4vw;
+  font-size: clamp(1rem, 1rem + 2vw, 2vw);
+  position: relative;
+  top: 0.4vw;
+}
+
+.btn {
+  background-color: var(--y);
+}
+
+.colorbutton {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.carrossel h1 {
+  margin-bottom: 2vw;
+}
+
+.carrossel p {
+  margin-bottom: 10vw;
+}
+
+.teste1 button {
+  margin-bottom: -22vw;
+}
+
+.activee a {
+  -webkit-text-decoration: underline 0.4vw var(--y);
+          text-decoration: underline 0.4vw var(--y);
+  transition: color 0.4s;
+}
+
+.activee a:hover {
+  -webkit-text-decoration: underline 0.4vw var(--y);
+          text-decoration: underline 0.4vw var(--y);
+  color: var(--y);
+  transition: color 0.4s;
+}
+
+.colorbutton:hover,
+.letrash3 button:hover {
+  transition: color 0.4s;
+  color: var(--b);
+}
+
+.navbar {
+  z-index: 10;
+  background-image: url("../img/fundo2.png");
+  background-size: 100vw;
+  background-repeat: repeat-y;
+}
+
+.imgnavbar {
+  width: clamp(2.5rem, 1.5rem + 5vw, 5vw);
+}
+
+.carrossel {
+  z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2;
+}
+
+.letrash3 {
+  padding-bottom: 8vw;
+}
+.letrash3 button {
+  margin-bottom: 5vw;
+  color: var(--b);
+  font-size: clamp(0.7rem, 1rem + 1.2vw, 1.2vw);
+}
+
+.amarelo {
+  color: var(--b);
+  background-color: var(--y);
+  height: clamp(22rem, 5rem + 40vw, 40vw);
+  display: flex;
+}
+
+.amarelo button,
+.amarelo button:hover,
+.amarelo p {
+  color: var(--b);
+}
+
+.amarelo button {
+  background-color: var(--p);
+  font-family: Poppins;
+  border-radius: 0.5vw;
+}
+
+.berco {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+.berco img {
+  max-width: 30vw;
+  min-width: 15rem;
+}
+
+.aboutus {
+  padding-top: clamp(0.1rem, 2rem + 8vw, 8vw);
+  float: left;
+}
+.aboutus h1,
+.aboutus p {
+  padding-bottom: clamp(0.1rem, 0.1rem + 0.1vw, 2.5vw);
+}
+.aboutus p {
+  line-height: clamp(0.5rem, 1rem + 2vw, 2vw);
+  font-family: bahnschrift;
+}
+.aboutus h1 {
+  font-family: Poppins;
+  font-size: clamp(1.5rem, 1rem + 3vw, 3vw);
+}
+
+.amarelo button {
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: clamp(0.7rem, 1rem + 1.2vw, 1.2vw);
+}
+
+.ourfurnitures {
+  text-align: center;
+}
+
+.ourfurnitures h1 {
+  font-family: poppins;
+  padding-top: 10vw;
+  font-size: clamp(1.5rem, 1rem + 3vw, 3vw);
+}
+
+.ourfurnitures p {
+  font-family: bahnschrift;
+  padding-bottom: 5vw;
+}
+
+.ourfurnitures img {
+  max-width: 35vw;
+  min-width: 15rem;
+}
+
+.ourfurnitures h3 {
+  font-family: "Open Sans";
+  color: var(--y);
+  font-size: clamp(1rem, 0.5rem + 1.5vw, 1.5vw);
+  text-align: left;
+  padding-left: 1vw;
+  padding-top: 8vw;
+  padding-bottom: 1vw;
+  font-weight: bold;
+}
+
+.ourfurnitures .row p {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  text-align: left;
+}
+
+.overlay {
+  width: 5vw;
+  height: 5vw;
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/lupabranca.png");
+  background-repeat: no-repeat;
+  background-size: 5vw;
+  margin-left: 17vw;
+  margin-top: -10vw;
+}
+
+.ourfurnitures .col:hover .overlay {
+  opacity: 0.8;
+}
+
+.ourfurnitures .col:hover .image {
+  opacity: 0.5;
+}
+
+.whoweare {
+  background-image: url("../img/fundowhoweare.png");
+  background-repeat: repeat-y;
+  text-align: center;
+  color: var(--b);
+  padding-bottom: 6.5vw;
+}
+
+.whoweare p {
+  color: var(--b);
+  font-family: bahnschrift;
+}
+
+.whoweare h1,
+.whoweare h3 {
+  font-family: poppins;
+}
+
+.whoweare button {
+  font-family: bahnschrift;
+  font-weight: bold;
+  background-color: var(--b);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  margin-top: 2vw;
+  font-size: clamp(0.7rem, 1rem + 1.2vw, 1.2vw);
+}
+
+.whoweare h1 {
+  padding-top: 3vw;
+}
+
+.whoweare h3,
+.whoweare p {
+  padding-top: 1vw;
+}
+
+.ourprojects {
+  font-family: bahnschrift;
+  text-align: center;
+  padding-top: 15vw;
+}
+
+.ourprojects img {
+  max-width: 23vw;
+  margin-top: 5vw;
+}
+
+.ourprojects label {
+  position: relative;
+  bottom: 25vw;
+  font-weight: bold;
+  font-size: 1.3vw;
+  color: var(--b);
+}
+
+.ourprojects label button {
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  opacity: 1;
+  transition: 0.5s ease;
+  left: 6.5vw;
+  background-color: transparent;
+  color: var(--b);
+  font-size: clamp(0.7rem, 1rem + 1.2vw, 1.2vw);
+}
+
+.ourprojects .botao {
+  top: 8vw;
+}
+
+.overlay2 {
+  max-width: 20vw;
+  height: 38vw;
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background-color: var(--y);
+  position: relative;
+  left: 12vw;
+  bottom: 20.8vw;
+  border-radius: 0.5vw;
+}
+
+.ourprojects .col:hover .image {
+  opacity: 1;
+  background-color: transparent;
+  color: var(--b);
+}
+
+.ourprojects .col:hover .overlay2 {
+  opacity: 0.8;
+}
+
+.ourclients {
+  text-align: center;
+  font-family: poppins;
+  min-height: 50vw;
+}
+
+.ourclients p {
+  font-family: bahnschrift;
+}
+
+.ourclients img {
+  float: left;
+}
+
+.ourclientscolleft {
+  border: solid 0.1vw var(--p);
+  border-radius: 0.1vw;
+  max-width: 42vw;
+  float: left;
+  margin-top: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.ourclientscolright {
+  border: solid 0.1vw var(--p);
+  border-radius: 0.1vw;
+  max-width: 42vw;
+  float: right;
+  margin-top: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.ourclients .row {
+  display: inline;
+  text-align: left;
+}
+
+.ourclients .row p {
+  color: var(--ce);
+  font-size: 1vw;
+}
+
+.ourclients .row h4 {
+  font-size: 1.5vw;
+}
+
+.ourclients .col img {
+  padding-right: 1vw;
+}
+
+.paginaclient {
+  float: left;
+  margin-top: 8vw;
+}
+
+.paginaclientamarelo a {
+  background-color: var(--y);
+  border: solid 0;
+  border-radius: 10vw;
+  padding: 1.5vw;
+  margin: 1vw;
+}
+
+.paginaclientamarelo li {
+  background-color: var(--y);
+  border: solid 0;
+  border-radius: 10vw;
+}
+
+.paginaclientamareloinv {
+  opacity: 0;
+}
+
+.paginaclientpreto a {
+  background-color: var(--p);
+  border: solid 0;
+  border-radius: 10vw;
+  padding: 1.5vw;
+  margin: 1vw;
+}
+
+.rodape {
+  background-image: url("../img/rodapebg.png");
+  background-repeat: repeat-y;
+  opacity: 0.8;
+}
+
+.contactus {
+  background-color: rgba(255, 179, 0, 0.8);
+  height: 50vw;
+  opacity: 1;
+}
+
+.contactus h1 {
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+  color: var(--b);
+}
+
+.contactus input,
+.contactus textarea {
+  margin-top: 1vw;
+}
+
+.contactsend {
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  margin-top: 2vw;
+  color: var(--b);
+  background-color: transparent;
+  border: solid 0.3vw var(--b);
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.contactsend:hover {
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  color: var(--ce);
+  background-color: var(--b);
+  border: solid 0.3vw var(--b);
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.contactimage {
+  position: relative;
+  bottom: 4vw;
+  left: 2vw;
+}
+
+.together {
+  opacity: 1;
+  color: var(--b);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.together h1 {
+  font-weight: bold;
+}
+
+.together p {
+  color: var(--b);
+}
+
+.together a {
+  text-decoration: none;
+  color: var(--b);
+}
+
+.together input,
+.together button {
+  border-bottom: solid 0.1vw var(--b);
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  background-color: transparent;
+}
+
+.together button {
+  color: var(--b);
+  font-weight: bold;
+}
+
+.together input:hover {
+  border-bottom: solid 0.1vw var(--b);
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  background-color: transparent;
+}
+
+.together input:focus {
+  border-bottom: solid 0.1vw var(--b);
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  background-color: transparent;
+}
+
+.together .input-group {
+  max-width: 40vw;
+  position: relative;
+  left: 40vw;
+}
+
+.socialmedia {
+  background-color: var(--b);
+  padding-top: 2vw;
+  padding-bottom: 0.5vw;
+}
+
+.imagesmedia img {
+  padding-left: 0.3vw;
+  padding-right: 0.3vw;
+}/*# sourceMappingURL=atividade.css.map */

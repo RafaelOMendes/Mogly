@@ -9,14 +9,18 @@
 
 body {
     font-family: poppins;
-}
 
-body h1 {
-    font-size: clamp(2rem, 1rem + 3vw, 3vw);
-}
+    h1 {
+        font-size: clamp(2rem, 1rem + 3vw, 3vw);
+    }
 
-body h2 {
-    font-size: clamp(1.3rem, .7rem + 2vw, 2vw);
+    h2 {
+        font-size: clamp(1.3rem, .7rem + 2vw, 2vw);
+
+        &:hover {
+            color: var(--ce);
+        }
+    }
 }
 
 body h3 {
@@ -125,7 +129,6 @@ body a {
     padding-top: 2vw;
 }
 
-.letrash3 button,
 .colorbutton {
     color: var(--b);
     font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
@@ -196,7 +199,7 @@ p {
     background-repeat: repeat-y;
 }
 
-.imgnavbar{
+.imgnavbar {
     width: clamp(2.5rem, 1.5rem + 5vw, 5vw);
 }
 
@@ -211,12 +214,18 @@ p {
 
 .letrash3 {
     padding-bottom: 8vw;
+    button{
+        margin-bottom: 5vw;
+        color: var(--b);
+        font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
+    }
 }
 
 .amarelo {
     color: var(--b);
     background-color: var(--y);
-    height: clamp(20rem, 5rem + 40vw, 40vw);
+    height: clamp(22rem, 5rem + 40vw, 40vw);
+    display: flex;
 }
 
 .amarelo button,
@@ -232,35 +241,36 @@ p {
 }
 
 .berco {
-    top: 10vw;
-    left: 10vw;
-    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+
+    img {
+        max-width: 30vw;
+        min-width: 15rem;
+    }
 }
 
-.berco img {
-    max-width: 30vw;
-    min-width: 15rem;
-}
 
 .aboutus {
-    padding-top: clamp(.1rem ,2rem + 8vw, 8vw);
-    max-width: 30vw;
+    padding-top: clamp(.1rem, 2rem + 8vw, 8vw);
     float: left;
-}
 
-.aboutus h1,
-.aboutus p {
-    padding-bottom: clamp(.1rem, 1rem + 2.5vw, 2.5vw);
-}
+    h1,
+    p {
+        padding-bottom: clamp(.1rem, .1rem + .1vw, 2.5vw);
+    }
 
-.aboutus p {
-    line-height: clamp(.2rem, 1rem + 2, 2);
-    font-family: bahnschrift;
-}
+    p {
+        line-height: clamp(.5rem, 1rem + 2vw, 2vw);
+        font-family: bahnschrift;
+    }
 
-.aboutus h1 {
-    font-family: Poppins;
-    font-size: clamp(1.5rem, 1rem + 3vw, 3vw);
+    h1 {
+        font-family: Poppins;
+        font-size: clamp(1.5rem, 1rem + 3vw, 3vw);
+    }
 }
 
 .amarelo button {
@@ -288,12 +298,13 @@ p {
 
 .ourfurnitures img {
     max-width: 35vw;
+    min-width: 15rem;
 }
 
 .ourfurnitures h3 {
     font-family: 'Open Sans';
     color: var(--y);
-    font-size: 1.2vw;
+    font-size: clamp(1rem, .5rem + 1.5vw, 1.5vw);
     text-align: left;
     padding-left: 1vw;
     padding-top: 8vw;
@@ -305,6 +316,7 @@ p {
     padding-left: 1vw;
     padding-right: 1vw;
     text-align: left;
+
 }
 
 .overlay {
@@ -561,7 +573,7 @@ p {
     position: relative;
     bottom: 4vw;
     left: 2vw;
-    
+
 }
 
 .together {
