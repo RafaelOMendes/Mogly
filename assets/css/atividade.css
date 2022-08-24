@@ -16,18 +16,12 @@ body h1 {
 body h2 {
   font-size: clamp(1.3rem, 0.7rem + 2vw, 2vw);
 }
-body h2:hover {
-  color: var(--ce);
-}
-
 body h3 {
   font-size: clamp(1rem, 0.5rem + 1.8vw, 1.8vw);
 }
-
 body p {
   font-size: clamp(0.7rem, 0.4rem + 1.1vw, 1.1vw);
 }
-
 body a {
   font-size: clamp(0.7rem, 0.4rem + 1.1vw, 1.1vw);
 }
@@ -238,13 +232,13 @@ p {
 
 .berco {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100%;
   align-items: center;
 }
 .berco img {
   max-width: 30vw;
-  min-width: 15rem;
+  min-width: 10rem;
 }
 
 .aboutus {
@@ -256,7 +250,7 @@ p {
   padding-bottom: clamp(0.1rem, 0.1rem + 0.1vw, 2.5vw);
 }
 .aboutus p {
-  line-height: clamp(0.5rem, 1rem + 2vw, 2vw);
+  line-height: clamp(0.7rem, 1rem + 2vw, 2vw);
   font-family: bahnschrift;
 }
 .aboutus h1 {
@@ -310,23 +304,24 @@ p {
 }
 
 .overlay {
-  width: 5vw;
-  height: 5vw;
+  width: 15%;
+  min-width: 15rem;
+  height: 15%;
   transition: 0.5s ease;
   opacity: 0;
   transform: translate(-50%, -50%);
   background-image: url("../img/lupabranca.png");
   background-repeat: no-repeat;
-  background-size: 5vw;
-  margin-left: 17vw;
-  margin-top: -10vw;
+  background-size: 15%;
+  margin-left: 50%;
+  margin-top: clamp(-5rem, -2rem - 12vw, -12vw);
 }
 
-.ourfurnitures .col:hover .overlay {
+.ourfurnitures .coluna:hover .overlay {
   opacity: 0.8;
 }
 
-.ourfurnitures .col:hover .image {
+.ourfurnitures .coluna:hover .image {
   opacity: 0.5;
 }
 
@@ -431,7 +426,10 @@ p {
 .ourclients {
   text-align: center;
   font-family: poppins;
-  min-height: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .ourclients p {
@@ -445,8 +443,6 @@ p {
 .ourclientscolleft {
   border: solid 0.1vw var(--p);
   border-radius: 0.1vw;
-  max-width: 42vw;
-  float: left;
   margin-top: 2vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -455,25 +451,13 @@ p {
 .ourclientscolright {
   border: solid 0.1vw var(--p);
   border-radius: 0.1vw;
-  max-width: 42vw;
-  float: right;
-  margin-top: 2vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
-}
-
-.ourclients .row {
-  display: inline;
-  text-align: left;
+  float: right;
 }
 
 .ourclients .row p {
   color: var(--ce);
-  font-size: 1vw;
-}
-
-.ourclients .row h4 {
-  font-size: 1.5vw;
 }
 
 .ourclients .col img {

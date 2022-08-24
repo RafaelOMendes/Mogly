@@ -16,23 +16,19 @@ body {
 
     h2 {
         font-size: clamp(1.3rem, .7rem + 2vw, 2vw);
-
-        &:hover {
-            color: var(--ce);
-        }
     }
-}
 
-body h3 {
-    font-size: clamp(1rem, .5rem + 1.8vw, 1.8vw);
-}
+    h3 {
+        font-size: clamp(1rem, .5rem + 1.8vw, 1.8vw);
+    }
 
-body p {
-    font-size: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
-}
+    p {
+        font-size: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
+    }
 
-body a {
-    font-size: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
+    a {
+        font-size: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
+    }
 }
 
 .carousel-item {
@@ -214,7 +210,8 @@ p {
 
 .letrash3 {
     padding-bottom: 8vw;
-    button{
+
+    button {
         margin-bottom: 5vw;
         color: var(--b);
         font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
@@ -242,13 +239,13 @@ p {
 
 .berco {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
     align-items: center;
 
     img {
         max-width: 30vw;
-        min-width: 15rem;
+        min-width: 10rem;
     }
 }
 
@@ -263,7 +260,7 @@ p {
     }
 
     p {
-        line-height: clamp(.5rem, 1rem + 2vw, 2vw);
+        line-height: clamp(.7rem, 1rem + 2vw, 2vw);
         font-family: bahnschrift;
     }
 
@@ -320,23 +317,24 @@ p {
 }
 
 .overlay {
-    width: 5vw;
-    height: 5vw;
+    width: 15%;
+    min-width: 15rem;
+    height: 15%;
     transition: .5s ease;
     opacity: 0;
     transform: translate(-50%, -50%);
     background-image: url("../img/lupabranca.png");
     background-repeat: no-repeat;
-    background-size: 5vw;
-    margin-left: 17vw;
-    margin-top: -10vw;
+    background-size: 15%;
+    margin-left: 50%;
+    margin-top: clamp(-5rem, -2rem + -12vw,-12vw);
 }
 
-.ourfurnitures .col:hover .overlay {
+.ourfurnitures .coluna:hover .overlay {
     opacity: .8;
 }
 
-.ourfurnitures .col:hover .image {
+.ourfurnitures .coluna:hover .image {
     opacity: .5;
 }
 
@@ -441,7 +439,10 @@ p {
 .ourclients {
     text-align: center;
     font-family: poppins;
-    min-height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 .ourclients p {
@@ -455,8 +456,6 @@ p {
 .ourclientscolleft {
     border: solid 0.1vw var(--p);
     border-radius: .1vw;
-    max-width: 42vw;
-    float: left;
     margin-top: 2vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
@@ -465,25 +464,13 @@ p {
 .ourclientscolright {
     border: solid 0.1vw var(--p);
     border-radius: .1vw;
-    max-width: 42vw;
-    float: right;
-    margin-top: 2vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
-}
-
-.ourclients .row {
-    display: inline;
-    text-align: left;
+    float: right;
 }
 
 .ourclients .row p {
     color: var(--ce);
-    font-size: 1vw;
-}
-
-.ourclients .row h4 {
-    font-size: 1.5vw;
 }
 
 .ourclients .col img {
