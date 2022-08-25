@@ -235,6 +235,7 @@ p {
   justify-content: space-between;
   height: 100%;
   align-items: center;
+  padding-top: 7vw;
 }
 .berco img {
   max-width: 30vw;
@@ -424,42 +425,38 @@ p {
 }
 
 .ourclients {
-  text-align: center;
+  text-align: left;
   font-family: poppins;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   align-content: space-between;
 }
-
 .ourclients p {
   font-family: bahnschrift;
+  font-size: clamp(0.7rem, 0.4rem + 1vw, 1vw);
 }
-
 .ourclients img {
-  float: left;
+  padding-right: 1vw;
+  width: 100%;
+  padding-top: clamp(1rem, 1rem + 0.5vw, 0.3vw);
 }
-
-.ourclientscolleft {
+.ourclients .ourclientscolleft {
   border: solid 0.1vw var(--p);
   border-radius: 0.1vw;
   margin-top: 2vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
 }
-
-.ourclientscolright {
+.ourclients .ourclientscolright {
   border: solid 0.1vw var(--p);
   border-radius: 0.1vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  float: right;
+  margin-top: 2vw;
 }
-
 .ourclients .row p {
   color: var(--ce);
 }
-
 .ourclients .col img {
   padding-right: 1vw;
 }
@@ -503,7 +500,6 @@ p {
 
 .contactus {
   background-color: rgba(255, 179, 0, 0.8);
-  height: 50vw;
   opacity: 1;
 }
 
@@ -543,10 +539,8 @@ p {
   font-weight: bold;
 }
 
-.contactimage {
-  position: relative;
-  bottom: 4vw;
-  left: 2vw;
+.contactimage img {
+  max-width: 50vw;
 }
 
 .together {
@@ -584,14 +578,7 @@ p {
   font-weight: bold;
 }
 
-.together input:hover {
-  border-bottom: solid 0.1vw var(--b);
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  background-color: transparent;
-}
-
+.together input:hover,
 .together input:focus {
   border-bottom: solid 0.1vw var(--b);
   border-top: transparent;
