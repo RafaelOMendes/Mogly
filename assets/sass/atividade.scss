@@ -318,7 +318,7 @@ p {
 }
 
 .overlay {
-    width: 15%;
+    max-width: 35vw;
     min-width: 15rem;
     height: 15%;
     transition: .5s ease;
@@ -520,6 +520,7 @@ p {
 .contactus {
     background-color: rgba(255, 179, 0, 0.8);
     opacity: 1;
+    padding-bottom: 2%;
 }
 
 .contactus h1 {
@@ -534,32 +535,35 @@ p {
 }
 
 .contactsend {
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    padding-top: .8vw;
-    padding-bottom: .8vw;
+    padding-left: clamp(1.7rem, 2rem + 2.5vw, 2.5vw);
+    padding-right: clamp(1.7rem, 2rem + 2.5vw, 2.5vw);
+    padding-top: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
+    padding-bottom: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
     margin-top: 2vw;
     color: var(--b);
     background-color: transparent;
     border: solid .3vw var(--b);
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1rem + 1.1vw, 1.1vw);
     font-weight: bold;
 }
-
+.contactbutton{
+    display: flex;
+    justify-content: center;
+}
 .contactsend:hover {
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    padding-top: .8vw;
-    padding-bottom: .8vw;
+    padding-left: clamp(1.7rem, 2rem + 2.5vw, 2.5vw);
+    padding-right: clamp(1.7rem, 2rem + 2.5vw, 2.5vw);
+    padding-top: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
+    padding-bottom: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
     color: var(--ce);
     background-color: var(--b);
     border: solid .3vw var(--b);
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1rem + 1.1vw, 1.1vw);
     font-weight: bold;
 }
 
 .contactimage img {
-    max-width: 50vw;
+    max-width: 100%;
 }
 
 .together {
@@ -590,11 +594,13 @@ p {
     border-left: transparent;
     border-right: transparent;
     background-color: transparent;
+    font-size: clamp(.7rem, .4rem + 1.2vw, 1.2vw);
 }
 
 .together button {
     color: var(--b);
     font-weight: bold;
+    padding-bottom: 1px;
 }
 
 .together input:hover,
@@ -608,7 +614,7 @@ p {
 
 
 .together .input-group {
-    max-width: 40vw;
+    max-width: 100%;
 }
 
 .socialmedia {
