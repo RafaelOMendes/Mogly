@@ -291,7 +291,7 @@ p {
 
 .ourfurnitures p {
     font-family: bahnschrift;
-    padding-bottom: 5vw;
+    padding-bottom: 3vw;
 }
 
 .ourfurnitures img {
@@ -305,7 +305,7 @@ p {
     font-size: clamp(1rem, .5rem + 1.5vw, 1.5vw);
     text-align: left;
     padding-left: 1vw;
-    padding-top: 8vw;
+    margin-top: -10vw;
     padding-bottom: 1vw;
     font-weight: bold;
 }
@@ -320,15 +320,22 @@ p {
 .overlay {
     max-width: 35vw;
     min-width: 15rem;
-    height: 15%;
+    width: 100%;
     transition: .5s ease;
     opacity: 0;
     transform: translate(-50%, -50%);
     background-image: url("../img/lupabranca.png");
     background-repeat: no-repeat;
     background-size: 15%;
+    background-position: center;
     margin-left: 50%;
-    margin-top: clamp(-5rem, -2rem + -12vw, -12vw);
+    margin-top: clamp(-5rem, -5rem, -11.5vw);
+    min-height: 10rem;
+    height: 24vw;
+}
+
+.coluna {
+    height: 100%;
 }
 
 .ourfurnitures .coluna:hover .overlay {
@@ -382,58 +389,84 @@ p {
     font-family: bahnschrift;
     text-align: center;
     padding-top: 15vw;
-}
+    min-height: 29rem;
 
-.ourprojects img {
-    max-width: 23vw;
-    margin-top: 5vw;
-}
+    img {
+        max-width: clamp(8rem, 8rem + 23vw, 23vw);
+        margin-top: 5vw;
+    }
 
-.ourprojects label {
-    position: relative;
-    bottom: 25vw;
-    font-weight: bold;
-    font-size: 1.3vw;
-    color: var(--b);
-}
+    label {
+        position: relative;
+        bottom: 25vw;
+        font-weight: bold;
+        font-size: 1.3vw;
+        color: var(--b);
 
-.ourprojects label button {
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    opacity: 1;
-    transition: .5s ease;
-    left: 6.5vw;
-    background-color: transparent;
-    color: var(--b);
-    font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
-}
+        @media (max-width: 575px) {
+            bottom: 9rem;
+            font-size: .6rem;
+        }
+    }
 
-.ourprojects .botao {
-    top: 8vw;
+    label button {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        opacity: 1;
+        transition: .5s ease;
+        left: 6.5vw;
+        background-color: transparent;
+        color: var(--b);
+        font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
+    }
+
+    .botao {
+        top: 8vw;
+
+        @media (max-width: 575px) {
+            top: 2rem;
+        }
+    }
+
+    .row {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .overlay2 {
-    max-width: 20vw;
-    height: 38vw;
+    max-width: clamp(7rem, 7rem + 22vw, 22vw);
+    height: clamp(7rem, 7rem + 19vw, 19vw);
     transition: .5s ease;
     opacity: 0;
     transform: translate(-50%, -50%);
     background-color: var(--y);
     position: relative;
-    left: 12vw;
-    bottom: 20.8vw;
+    left: 50%;
+    bottom: 11.5vw;
     border-radius: .5vw;
+
+    @media (max-width: 575px) {
+        bottom: 4rem;
+        max-width: 115px;
+        height: 115px;
+    }
 }
 
-.ourprojects .col:hover .image {
+.overlay2aa {
+    padding-bottom: 2vw;
+}
+
+.ourprojects .overlay2aa:hover .image {
     opacity: 1;
     background-color: transparent;
     color: var(--b);
 }
 
-.ourprojects .col:hover .overlay2 {
+.ourprojects .overlay2aa:hover .overlay2 {
     opacity: 0.8;
 }
 
@@ -546,10 +579,12 @@ p {
     font-size: clamp(1rem, 1rem + 1.1vw, 1.1vw);
     font-weight: bold;
 }
-.contactbutton{
+
+.contactbutton {
     display: flex;
     justify-content: center;
 }
+
 .contactsend:hover {
     padding-left: clamp(1.7rem, 2rem + 2.5vw, 2.5vw);
     padding-right: clamp(1.7rem, 2rem + 2.5vw, 2.5vw);
