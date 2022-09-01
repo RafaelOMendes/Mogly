@@ -59,12 +59,6 @@ body {
     letter-spacing: 2px;
 }
 
-.navbar {
-    @media (max-width: 575px) {
-        margin-bottom: -3.6rem;
-    }
-}
-
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
@@ -186,6 +180,7 @@ p {
         align-items: center;
         justify-content: space-around;
     }
+
     @media (min-width: 576px) {
         height: 80%;
         display: flex !important;
@@ -194,9 +189,14 @@ p {
         justify-content: space-around;
         margin-bottom: 2rem;
     }
-    p{
+
+    p {
         @media (min-width: 576px) {
             margin-bottom: 22vw;
+        }
+
+        @media (min-width: 992px) {
+            margin-bottom: 26vw;
         }
     }
 }
@@ -227,11 +227,23 @@ p {
         background-image: url(../img/fundo2.png);
         background-repeat: repeat-y;
         margin-bottom: 0rem;
+        margin-bottom: -3.6rem;
     }
+
     @media (min-width: 576px) {
         background-image: url(../img/fundo2.png);
         background-repeat: repeat-y;
-        margin-bottom: 0rem;  
+        margin-bottom: 0rem;
+    }
+
+    @media (min-width: 992px) {
+        margin-bottom: -5rem;
+        background-image: none;
+    }
+
+    @media (min-width: 1700px) {
+        margin-bottom: -8rem;
+        background-image: none;
     }
 }
 
@@ -356,6 +368,10 @@ p {
     font-family: poppins;
     padding-top: 10vw;
     font-size: clamp(1.5rem, 1rem + 3vw, 3vw);
+
+    @media (min-width: 1920px) {
+        padding-top: 5vw;
+    }
 }
 
 .ourfurnitures p {
@@ -410,9 +426,33 @@ p {
         margin-bottom: 5rem;
         background-size: 3rem;
     }
+
     @media (min-width: 576px) {
         margin-top: -10.5rem;
         margin-bottom: 78px;
+    }
+
+    @media (min-width: 992px) {
+        margin-top: -18rem;
+        margin-bottom: 172px;
+        height: 290px;
+    }
+
+    @media (min-width: 1200px) {
+        height: 350px;
+        margin-top: -21.8rem;
+    }
+
+    @media (min-width: 1700px) {
+        width: 559px;
+        height: 372px;
+        margin-left: 7%;
+    }
+
+    @media (min-width: 1920px) {
+        margin-left: 10%;
+        margin-bottom: 230px;
+        margin-top: -23.8rem;
     }
 }
 
@@ -435,7 +475,7 @@ p {
 
 .whoweare {
     background-image: url("../img/fundowhoweare.png");
-    background-repeat: repeat-y;
+    background-repeat: repeat-x;
     text-align: center;
     color: var(--b);
     padding-bottom: 6.5vw;
@@ -461,10 +501,18 @@ p {
     padding-bottom: .5vw;
     margin-top: 2vw;
     font-size: clamp(.7rem, 1rem + 1.2vw, 1.2vw);
+
+    @media (min-width: 1700px) {
+        margin-top: 0;
+    }
 }
 
 .whoweare h1 {
     padding-top: 3vw;
+
+    @media (min-width: 1920px) {
+        padding-top: 1vw;
+    }
 }
 
 .whoweare h3,
@@ -478,11 +526,13 @@ p {
     padding-top: 15vw;
     min-height: 29rem;
 
+    @media (min-width: 1920px) {
+        padding-top: 0vw;
+    }
+
     img {
         max-width: clamp(8rem, 8rem + 23vw, 23vw);
         margin-top: 5vw;
-        @media (min-width: 576px) {
-        }
     }
 
     label {
@@ -517,6 +567,10 @@ p {
         @media (max-width: 575px) {
             top: 2.5rem;
         }
+
+        @media (min-width: 1920px) {
+            top: 5vw;
+        }
     }
 
     .row {
@@ -543,9 +597,26 @@ p {
         max-width: 115px;
         height: 115px;
     }
+
     @media (min-width: 576px) {
         max-width: 70%;
-    }    
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 65%;
+    }
+
+    @media (min-width: 1700px) {
+        max-width: 350px;
+        max-height: 350px;
+        margin-top: 1vw;
+    }
+
+    @media (min-width: 1920px) {
+        max-width: 330px;
+        max-height: 330px;
+        margin-top: 2vw;
+    }
 }
 
 .overlay2aa {
@@ -553,6 +624,10 @@ p {
 
     @media (max-width: 575px) {
         height: 12rem;
+    }
+
+    @media (min-width: 1920px) {
+        margin-bottom: -8vw;
     }
 }
 
@@ -666,17 +741,30 @@ p {
     background-color: rgba(255, 179, 0, 0.8);
     opacity: 1;
     padding-bottom: 2%;
+
+    @media (min-width: 1800px) {
+        padding-bottom: 0;
+    }
 }
 
 .contactus h1 {
     padding-top: 5vw;
     padding-bottom: 2vw;
     color: var(--b);
+
+    @media (min-width: 1800px) {
+        padding-top: 2vw;
+    }
+    @media (min-width: 2000px) {
+        padding-top: 1vw;
+    }
 }
 
 .contactus input,
 .contactus textarea {
     margin-top: 1vw;
+    font-size: 1.5vw;
+    padding: 1.2vw;
 }
 
 .contactsend {
@@ -690,6 +778,12 @@ p {
     border: solid .3vw var(--b);
     font-size: clamp(1rem, 1rem + 1.2vw, 1.2vw);
     font-weight: bold;
+    @media (min-width: 1920px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 .contactbutton {
@@ -697,13 +791,13 @@ p {
         display: flex;
         justify-content: center;
     }
+    @media (min-width: 2000px) {
+        margin-top: -2vw;
+        margin-bottom: 1vw;
+    }
 }
 
 .contactsend:hover {
-    padding-left: clamp(1.7rem, 2rem + 2.5vw, 2.5vw);
-    padding-right: clamp(1.7rem, 2rem + 2.5vw, 2.5vw);
-    padding-top: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
-    padding-bottom: clamp(.7rem, .4rem + 1.1vw, 1.1vw);
     color: var(--ce);
     background-color: var(--b);
     border: solid .3vw var(--b);
@@ -721,6 +815,11 @@ p {
     background-color: rgba(0, 0, 0, 0.8);
     padding-top: 5vw;
     padding-bottom: 5vw;
+
+    @media (min-width: 1800px) {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
 }
 
 .together h1 {
@@ -750,6 +849,16 @@ p {
     color: var(--b);
     font-weight: bold;
     padding-bottom: 1px;
+
+    @media (min-width: 1700px) {
+        bottom: 1px;
+    }
+    @media (min-width: 1700px) {
+        bottom: 4px;
+    }
+    @media (min-width: 1920px) {
+        bottom: 5px;
+    }
 }
 
 .together input:hover,

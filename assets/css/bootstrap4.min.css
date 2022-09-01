@@ -591,8 +591,9 @@ pre code {
         max-width: 540px
     }
 }
+
 @media (min-width:576px) {
-    .ourprojects .container{
+    .ourprojects .container {
         max-width: 100%;
     }
 }
@@ -612,6 +613,13 @@ pre code {
 @media (min-width:1200px) {
     .container {
         max-width: 1140px
+    }
+}
+
+@media (min-width: 1700px) {
+    .container {
+        width: 80% !important;
+        max-width: 80% !important;
     }
 }
 
