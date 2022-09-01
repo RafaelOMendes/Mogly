@@ -591,6 +591,11 @@ pre code {
         max-width: 540px
     }
 }
+@media (min-width:576px) {
+    .ourprojects .container{
+        max-width: 100%;
+    }
+}
 
 @media (min-width:768px) {
     .container {

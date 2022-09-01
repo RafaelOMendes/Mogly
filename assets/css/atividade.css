@@ -27,13 +27,14 @@ body a {
 }
 
 .carousel-item {
-  height: clamp(20rem, 20rem + 55vw, 55vw);
   background: no-repeat center center scroll;
   background-size: cover;
 }
 
-.carousel-caption {
-  bottom: 20vw;
+@media (max-width: 575px) {
+  .carousel-caption {
+    bottom: 3.5rem;
+  }
 }
 
 .carousel-caption p {
@@ -48,6 +49,12 @@ body a {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    margin-bottom: -3.6rem;
+  }
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
@@ -160,7 +167,32 @@ p {
 }
 
 .teste1 button {
-  margin-bottom: -22vw;
+  margin-bottom: -1rem;
+}
+
+@media (max-width: 575px) {
+  .teste1 {
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 576px) {
+  .teste1 {
+    height: 80%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 576px) {
+  .teste1 p {
+    margin-bottom: 22vw;
+  }
 }
 
 .activee a {
@@ -183,10 +215,23 @@ p {
 }
 
 .navbar {
-  z-index: 10;
-  background-image: url("../img/fundo2.png");
+  z-index: 3;
   background-size: 100vw;
   background-repeat: repeat-y;
+}
+@media (max-width: 575px) {
+  .navbar {
+    background-image: url(../img/fundo2.png);
+    background-repeat: repeat-y;
+    margin-bottom: 0rem;
+  }
+}
+@media (min-width: 576px) {
+  .navbar {
+    background-image: url(../img/fundo2.png);
+    background-repeat: repeat-y;
+    margin-bottom: 0rem;
+  }
 }
 
 .imgnavbar {
@@ -194,7 +239,24 @@ p {
 }
 
 .carrossel {
-  z-index: 1;
+  z-index: 2;
+}
+@media (max-width: 575px) {
+  .carrossel {
+    height: 20rem;
+  }
+}
+@media (max-width: 575px) {
+  .carrossel img {
+    height: 20rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 575px) {
+  .carrossel p {
+    display: none;
+  }
 }
 
 .carousel-control-prev,
@@ -217,27 +279,31 @@ p {
   height: clamp(22rem, 5rem + 40vw, 40vw);
   display: flex;
 }
-
-.amarelo button,
-.amarelo button:hover,
-.amarelo p {
-  color: var(--b);
+@media (min-width: 450px) {
+  .amarelo .container {
+    width: 90%;
+  }
 }
-
-.amarelo button {
+.amarelo .container button {
   background-color: var(--p);
   font-family: Poppins;
   border-radius: 0.5vw;
 }
-
-.berco {
+.amarelo .container .row {
+  height: 100%;
+}
+.amarelo .container button,
+.amarelo .container button:hover,
+.amarelo .container p {
+  color: var(--b);
+}
+.amarelo .container .berco {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
   align-items: center;
-  padding-top: 7vw;
 }
-.berco img {
+.amarelo .container .berco img {
   max-width: 30vw;
   min-width: 10rem;
 }
@@ -283,8 +349,14 @@ p {
 }
 
 .ourfurnitures img {
-  max-width: 35vw;
+  max-width: 100%;
   min-width: 15rem;
+}
+@media (max-width: 575px) {
+  .ourfurnitures img {
+    width: 290px;
+    height: 193px;
+  }
 }
 
 .ourfurnitures h3 {
@@ -305,24 +377,41 @@ p {
 }
 
 .overlay {
-  max-width: 35vw;
   min-width: 15rem;
   width: 100%;
   transition: 0.5s ease;
   opacity: 0;
-  transform: translate(-50%, -50%);
   background-image: url("../img/lupabranca.png");
   background-repeat: no-repeat;
   background-size: 15%;
   background-position: center;
-  margin-left: 50%;
   margin-top: clamp(-5rem, -5rem, -11.5vw);
   min-height: 10rem;
   height: 24vw;
 }
+@media (max-width: 575px) {
+  .overlay {
+    height: 193px;
+    margin-top: -12.5rem;
+    margin-bottom: 5rem;
+    background-size: 3rem;
+  }
+}
+@media (min-width: 576px) {
+  .overlay {
+    margin-top: -10.5rem;
+    margin-bottom: 78px;
+  }
+}
 
 .coluna {
   height: 100%;
+}
+@media (min-width: 576px) {
+  .coluna {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 }
 
 .ourfurnitures .coluna:hover .overlay {
@@ -412,7 +501,7 @@ p {
 }
 @media (max-width: 575px) {
   .ourprojects .botao {
-    top: 2rem;
+    top: 2.5rem;
   }
 }
 .ourprojects .row {
@@ -431,7 +520,7 @@ p {
   position: relative;
   left: 50%;
   bottom: 11.5vw;
-  border-radius: 0.5vw;
+  border-radius: 0.5rem;
 }
 @media (max-width: 575px) {
   .overlay2 {
@@ -440,9 +529,19 @@ p {
     height: 115px;
   }
 }
+@media (min-width: 576px) {
+  .overlay2 {
+    max-width: 70%;
+  }
+}
 
 .overlay2aa {
   padding-bottom: 2vw;
+}
+@media (max-width: 575px) {
+  .overlay2aa {
+    height: 12rem;
+  }
 }
 
 .ourprojects .overlay2aa:hover .image {
@@ -462,6 +561,11 @@ p {
   justify-content: space-between;
   align-content: space-between;
 }
+@media (max-width: 767px) {
+  .ourclients {
+    text-align: center;
+  }
+}
 .ourclients p {
   font-family: bahnschrift;
   font-size: clamp(0.7rem, 0.4rem + 1vw, 1vw);
@@ -470,6 +574,11 @@ p {
   padding-right: 1vw;
   width: 100%;
   padding-top: clamp(1rem, 1rem + 0.5vw, 0.3vw);
+}
+@media (max-width: 767px) {
+  .ourclients img {
+    margin-bottom: 1.5rem;
+  }
 }
 .ourclients .ourclientscolleft {
   border: solid 0.1vw var(--p);
@@ -504,6 +613,11 @@ p {
   padding: 1.5vw;
   margin: 1vw;
 }
+@media (max-width: 767px) {
+  .paginaclientamarelo a {
+    padding: 1rem;
+  }
+}
 
 .paginaclientamarelo li {
   background-color: var(--y);
@@ -521,6 +635,11 @@ p {
   border-radius: 10vw;
   padding: 1.5vw;
   margin: 1vw;
+}
+@media (max-width: 767px) {
+  .paginaclientpreto a {
+    padding: 1rem;
+  }
 }
 
 .rodape {
@@ -555,13 +674,15 @@ p {
   color: var(--b);
   background-color: transparent;
   border: solid 0.3vw var(--b);
-  font-size: clamp(1rem, 1rem + 1.1vw, 1.1vw);
+  font-size: clamp(1rem, 1rem + 1.2vw, 1.2vw);
   font-weight: bold;
 }
 
-.contactbutton {
-  display: flex;
-  justify-content: center;
+@media (max-width: 767px) {
+  .contactbutton {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contactsend:hover {
@@ -572,7 +693,7 @@ p {
   color: var(--ce);
   background-color: var(--b);
   border: solid 0.3vw var(--b);
-  font-size: clamp(1rem, 1rem + 1.1vw, 1.1vw);
+  font-size: clamp(1rem, 1rem + 1.2vw, 1.2vw);
   font-weight: bold;
 }
 

@@ -32,7 +32,6 @@ body {
 }
 
 .carousel-item {
-    height: clamp(20rem, 20rem + 55vw, 55vw);
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -41,7 +40,9 @@ body {
 }
 
 .carousel-caption {
-    bottom: 20vw;
+    @media (max-width: 575px) {
+        bottom: 3.5rem;
+    }
 }
 
 .carousel-caption p {
@@ -56,6 +57,12 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.navbar {
+    @media (max-width: 575px) {
+        margin-bottom: -3.6rem;
+    }
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -168,7 +175,30 @@ p {
 }
 
 .teste1 button {
-    margin-bottom: -22vw;
+    margin-bottom: -1rem;
+}
+
+.teste1 {
+    @media (max-width: 575px) {
+        height: 100%;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    @media (min-width: 576px) {
+        height: 80%;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    p{
+        @media (min-width: 576px) {
+            margin-bottom: 22vw;
+        }
+    }
 }
 
 .activee a {
@@ -189,10 +219,20 @@ p {
 }
 
 .navbar {
-    z-index: 10;
-    background-image: url('../img/fundo2.png');
+    z-index: 3;
     background-size: 100vw;
     background-repeat: repeat-y;
+
+    @media (max-width: 575px) {
+        background-image: url(../img/fundo2.png);
+        background-repeat: repeat-y;
+        margin-bottom: 0rem;
+    }
+    @media (min-width: 576px) {
+        background-image: url(../img/fundo2.png);
+        background-repeat: repeat-y;
+        margin-bottom: 0rem;  
+    }
 }
 
 .imgnavbar {
@@ -200,7 +240,24 @@ p {
 }
 
 .carrossel {
-    z-index: 1;
+    z-index: 2;
+
+    @media (max-width: 575px) {
+        height: 20rem;
+    }
+
+    img {
+        @media (max-width: 575px) {
+            height: 20rem;
+            object-fit: cover;
+        }
+    }
+
+    p {
+        @media (max-width: 575px) {
+            display: none;
+        }
+    }
 }
 
 .carousel-control-prev,
@@ -223,32 +280,44 @@ p {
     background-color: var(--y);
     height: clamp(22rem, 5rem + 40vw, 40vw);
     display: flex;
-}
 
-.amarelo button,
-.amarelo button:hover,
-.amarelo p {
-    color: var(--b);
-}
+    .container {
+        @media (min-width: 450px) {
+            width: 90%;
+        }
 
-.amarelo button {
-    background-color: var(--p);
-    font-family: Poppins;
-    border-radius: .5vw;
-}
+        button {
+            background-color: var(--p);
+            font-family: Poppins;
+            border-radius: .5vw;
+        }
 
-.berco {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    align-items: center;
-    padding-top: 7vw;
+        .row {
+            height: 100%;
+        }
 
-    img {
-        max-width: 30vw;
-        min-width: 10rem;
+        button,
+        button:hover,
+        p {
+            color: var(--b);
+        }
+
+        .berco {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            align-items: center;
+
+            img {
+                max-width: 30vw;
+                min-width: 10rem;
+            }
+        }
     }
 }
+
+
+
 
 
 .aboutus {
@@ -295,8 +364,13 @@ p {
 }
 
 .ourfurnitures img {
-    max-width: 35vw;
+    max-width: 100%;
     min-width: 15rem;
+
+    @media (max-width: 575px) {
+        width: 290px;
+        height: 193px;
+    }
 }
 
 .ourfurnitures h3 {
@@ -318,24 +392,37 @@ p {
 }
 
 .overlay {
-    max-width: 35vw;
     min-width: 15rem;
     width: 100%;
     transition: .5s ease;
     opacity: 0;
-    transform: translate(-50%, -50%);
     background-image: url("../img/lupabranca.png");
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: center;
-    margin-left: 50%;
     margin-top: clamp(-5rem, -5rem, -11.5vw);
     min-height: 10rem;
     height: 24vw;
+
+    @media (max-width: 575px) {
+        height: 193px;
+        margin-top: -12.5rem;
+        margin-bottom: 5rem;
+        background-size: 3rem;
+    }
+    @media (min-width: 576px) {
+        margin-top: -10.5rem;
+        margin-bottom: 78px;
+    }
 }
 
 .coluna {
     height: 100%;
+
+    @media (min-width: 576px) {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
 }
 
 .ourfurnitures .coluna:hover .overlay {
@@ -394,6 +481,8 @@ p {
     img {
         max-width: clamp(8rem, 8rem + 23vw, 23vw);
         margin-top: 5vw;
+        @media (min-width: 576px) {
+        }
     }
 
     label {
@@ -426,7 +515,7 @@ p {
         top: 8vw;
 
         @media (max-width: 575px) {
-            top: 2rem;
+            top: 2.5rem;
         }
     }
 
@@ -447,17 +536,24 @@ p {
     position: relative;
     left: 50%;
     bottom: 11.5vw;
-    border-radius: .5vw;
+    border-radius: .5rem;
 
     @media (max-width: 575px) {
         bottom: 4rem;
         max-width: 115px;
         height: 115px;
     }
+    @media (min-width: 576px) {
+        max-width: 70%;
+    }    
 }
 
 .overlay2aa {
     padding-bottom: 2vw;
+
+    @media (max-width: 575px) {
+        height: 12rem;
+    }
 }
 
 .ourprojects .overlay2aa:hover .image {
@@ -471,6 +567,10 @@ p {
 }
 
 .ourclients {
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+
     text-align: left;
     font-family: poppins;
     align-items: center;
@@ -486,6 +586,10 @@ p {
         padding-right: 1vw;
         width: 100%;
         padding-top: clamp(1rem, 1rem + .5vw, .3vw);
+
+        @media (max-width: 767px) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     .ourclientscolleft {
@@ -524,6 +628,10 @@ p {
     border-radius: 10vw;
     padding: 1.5vw;
     margin: 1vw;
+
+    @media (max-width: 767px) {
+        padding: 1rem;
+    }
 }
 
 .paginaclientamarelo li {
@@ -542,6 +650,10 @@ p {
     border-radius: 10vw;
     padding: 1.5vw;
     margin: 1vw;
+
+    @media (max-width: 767px) {
+        padding: 1rem;
+    }
 }
 
 .rodape {
@@ -576,13 +688,15 @@ p {
     color: var(--b);
     background-color: transparent;
     border: solid .3vw var(--b);
-    font-size: clamp(1rem, 1rem + 1.1vw, 1.1vw);
+    font-size: clamp(1rem, 1rem + 1.2vw, 1.2vw);
     font-weight: bold;
 }
 
 .contactbutton {
-    display: flex;
-    justify-content: center;
+    @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .contactsend:hover {
@@ -593,7 +707,7 @@ p {
     color: var(--ce);
     background-color: var(--b);
     border: solid .3vw var(--b);
-    font-size: clamp(1rem, 1rem + 1.1vw, 1.1vw);
+    font-size: clamp(1rem, 1rem + 1.2vw, 1.2vw);
     font-weight: bold;
 }
 
