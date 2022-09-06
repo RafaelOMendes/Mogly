@@ -7,25 +7,6 @@
   --b: rgb(255, 255, 255);
 }
 
-body {
-  font-family: poppins;
-}
-body h1 {
-  font-size: clamp(2rem, 1rem + 3vw, 3vw);
-}
-body h2 {
-  font-size: clamp(1.3rem, 0.7rem + 2vw, 2vw);
-}
-body h3 {
-  font-size: clamp(1rem, 0.5rem + 1.8vw, 1.8vw);
-}
-body p {
-  font-size: clamp(0.7rem, 0.4rem + 1.1vw, 1.1vw);
-}
-body a {
-  font-size: clamp(0.7rem, 0.4rem + 1.1vw, 1.1vw);
-}
-
 .carousel-item {
   background: no-repeat center center scroll;
   background-size: cover;
@@ -93,6 +74,25 @@ body a {
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--y);
   transition: color 0.4s;
+}
+
+body {
+  font-family: poppins;
+}
+body h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 3vw);
+}
+body h2 {
+  font-size: clamp(1.3rem, 0.7rem + 2vw, 2vw);
+}
+body h3 {
+  font-size: clamp(1rem, 0.5rem + 1.8vw, 1.8vw);
+}
+body p {
+  font-size: clamp(0.7rem, 0.4rem + 1.1vw, 1.1vw);
+}
+body a {
+  font-size: clamp(0.7rem, 0.4rem + 1.1vw, 1.1vw);
 }
 
 .letrash2 {
@@ -262,7 +262,7 @@ body a {
   margin-bottom: 2vw;
 }
 .carrossel p {
-  margin-bottom: 10vw;
+  margin-bottom: 27vw;
 }
 
 .carousel-control-prev,
@@ -893,8 +893,7 @@ body a {
   text-decoration: none;
   color: var(--b);
 }
-.rodape .together input,
-.rodape .together button {
+.rodape .together input, .rodape .together button {
   border-bottom: solid 0.1vw var(--b);
   border-top: transparent;
   border-left: transparent;
